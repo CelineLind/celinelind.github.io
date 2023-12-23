@@ -15,13 +15,13 @@
 <body>
     <p><a href="../../index.html">home</a>/ai/<a href="../learn.html">learn</a>/machine-learning/unsupervised-learning</p>
     <h1>Unsupervised Learning - with KMeans Clustering</h1>
-    <p>In unsupervised learning, we provide a model with unlabelled data, and ask it to conduct some task 
+    <p>In unsupervised learning, we provide a model with unlabelled, unclassified data, and ask it to conduct some task 
         (such as clustering, dimension reduction, etc) from observing and analysing patterns in the data alone.
     </p>
     
-    <h3>KMeans Clustering</h3>
+    <h2>KMeans Clustering</h2>
     <p>KMeans is an unsupervised clustering algorithm.
-        We provide the algorithm with the number of clusters we would like it to group our data into -
+        We provide the algorithm with the number of clusters (K) we would like it to group our data into -
         but we don't tell it how to group the data exactly. 
         It figures that out on its own from the patterns and structures in the data.
     </p>
@@ -34,4 +34,45 @@
         (location of data points and clusters) will always be same.
     </p>
     <gradio-app src="https://celinelind-unsupervised-learning-clustering.hf.space"></gradio-app>
+
+    <h3>KMeans Algorithm Explained</h3>
+    <p>
+        The KMeans algorithm is as follows:
+        <ol>
+            <li>Randomly initialise K mean points. 
+                This means, randomly place the same number points on the graph 
+                as you selected for the number of clusters (K). These are also called "means".
+            </li>
+            <li>
+                For every data point on the graph, measure which of the mean points it is the closest to. 
+                Label that data point, for now, as belonging to that meann point's cluster.
+            </li>
+            <li>
+                Once all the data points have been labelled, 
+                the algorithm will take the average point from all of those in a cluster, 
+                and move that cluster's mean point to that average position on the graph. 
+                Therefore, the mean point should now sit directly in the average middle 
+                spot between all the points in it's cluster.
+            </li>
+            <li>
+                Steps 2 and 3 are then repeated for a set number of times (in the example above, 100 times). 
+                This results in the mean points for each cluster sitting as close to 
+                the middle of each cluster as possible. Therefore, this clusters all the surrounding points 
+                in accordance with which mean point they are closest to.
+            </li>
+        </ol>
+    </p>
+    
+    <!-- Insert example with same inputs 
+        as above + number of iterations, 
+        which plots with subplots for mean 
+        points after every few iterations -->
+
+
+    <h3>Additional Resources</h3>
+    <ul>
+        <li><a href="https://www.geeksforgeeks.org/k-means-clustering-introduction/">geeksforgeeks k-means-clustering-introduction</a></li>
+        <li><a href="https://realpython.com/k-means-clustering-python/">realpython k-means-clustering-python</a></li>
+        <li><a href="https://neptune.ai/blog/k-means-clustering">neptune ai k-means-clustering</a></li>
+    </ul>
 </body>

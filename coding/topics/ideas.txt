@@ -1,0 +1,40 @@
+    <h3>Beginner Friendly Machine Learning</h3>
+    <p>Basic Concepts</p>
+    <ul>
+        <p>Parameters and Hyperparameters</p>
+        <p>(etc)</p>
+    </ul>
+    <p>Types of Machine Learning</p>
+    <ul>
+        <p>Unsupervised Learning</p>
+        <p>Supervised Learning</p>
+        <p>Reinforcement Learning</p>
+    </ul>
+    <p>Basic Algorithms</p>
+    <ul>
+        <p>Linear Regression</p>
+        <p>Logistic Regression</p>
+        <p>(etc)</p>
+    </ul>
+    <p>Evaluating Basic Algorithms</p>
+    <ul>
+        <p>Accuracy, precision, recall, F1-score</p>
+        <p>(etc)</p>
+    </ul>
+
+    <h3>Natural Language Processing</h3>
+    <p>Basic Concepts</p>
+    <ul>
+        <p>Tokenisation</p>
+        <p>Parameters and Hyperparameters</p>
+    </ul>
+
+    <p>Fundamentals</p>
+    <ul>
+        <p>Part-of-speech tagging</p>
+        <p>Named entity recognition</p>
+        <p>Sentiment Analysis</p>
+        <p>Text classification</p>
+        <p>Question answering</p>
+
+    </ul>
